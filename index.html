@@ -56,19 +56,21 @@
 <script>document.documentElement.classList.add("js")</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap"></noscript>
 <style>
 :root{
   --bg:#08090c; --bg-2:#0e1016; --card:rgba(255,255,255,.035); --card-h:rgba(255,255,255,.06);
   --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
-  --fg:#f2f3f5; --fg-2:#a4a9b4; --fg-3:#6b717d;
+  --fg:#f2f3f5; --fg-2:#a4a9b4; --fg-3:#8a909c;
   --accent:#8b7cff; --accent-2:#3ee6c1; --glow:rgba(139,124,255,.35);
   --r:20px;
 }
 :root[data-theme="light"]{
   --bg:#f7f7f5; --bg-2:#ffffff; --card:#ffffff; --card-h:#fbfbfa;
   --line:rgba(10,12,20,.08); --line-2:rgba(10,12,20,.16);
-  --fg:#0c0e13; --fg-2:#4b515c; --fg-3:#8a909b;
+  --fg:#0c0e13; --fg-2:#4b515c; --fg-3:#656b76;
   --accent:#5b48f0; --accent-2:#0a9f7f; --glow:rgba(91,72,240,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -234,7 +236,7 @@ footer{padding:40px 0 56px;display:flex;justify-content:space-between;color:var(
 <main>
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="avatar rv"><img src="photo.jpg" alt="Mohamed Boujelbane" width="480" height="480"></div>
+    <div class="avatar rv"><picture><source type="image/webp" srcset="photo-264.webp"><img src="photo-264.jpg" alt="Mohamed Boujelbane, chef de projet et PMO senior" width="264" height="264" fetchpriority="high" decoding="async"></picture></div>
     <h1 class="rv"><span class="kicker">Mohamed Boujelbane — Chef de projet &amp; PMO senior à Tunis</span>Je transforme la stratégie en <span class="serif">projets livrés.</span></h1>
     <p class="rv">Directeur des projets et organisation. Plus de 10 ans à piloter des projets SI, de transformation digitale et de monétique dans la banque et les paiements, du cadrage jusqu'à la mise en production.</p>
     <div class="hero-btns rv">
